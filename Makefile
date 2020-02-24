@@ -1,5 +1,5 @@
 PKG_NAME := gitdb
-URL = https://files.pythonhosted.org/packages/e3/95/7e5d7261feb46c0539ac5e451be340ddd64d78c5118f2d893b052c76fe8c/gitdb-0.6.4.tar.gz
+URL = https://files.pythonhosted.org/packages/8f/04/e47faf01c2657d3b1bdf5f9b5a00b618d11ae7765e8e90d5357c37962e07/gitdb-4.0.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
