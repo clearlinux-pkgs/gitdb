@@ -4,7 +4,7 @@
 #
 Name     : gitdb
 Version  : 4.0.2
-Release  : 7
+Release  : 8
 URL      : https://files.pythonhosted.org/packages/53/e5/893d1f727a00d598466192360c0313c68e5aec7629c7647210b50e285f2b/gitdb-4.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/53/e5/893d1f727a00d598466192360c0313c68e5aec7629c7647210b50e285f2b/gitdb-4.0.2.tar.gz
 Summary  : Git Object Database
@@ -13,7 +13,9 @@ License  : BSD-3-Clause
 Requires: gitdb-license = %{version}-%{release}
 Requires: gitdb-python = %{version}-%{release}
 Requires: gitdb-python3 = %{version}-%{release}
+Requires: smmap
 BuildRequires : buildreq-distutils3
+BuildRequires : smmap
 
 %description
 GitDB
@@ -55,8 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582565159
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1582589798
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
