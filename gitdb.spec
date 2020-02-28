@@ -4,7 +4,7 @@
 #
 Name     : gitdb
 Version  : 4.0.2
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/53/e5/893d1f727a00d598466192360c0313c68e5aec7629c7647210b50e285f2b/gitdb-4.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/53/e5/893d1f727a00d598466192360c0313c68e5aec7629c7647210b50e285f2b/gitdb-4.0.2.tar.gz
 Summary  : Git Object Database
@@ -13,14 +13,10 @@ License  : BSD-3-Clause
 Requires: gitdb-license = %{version}-%{release}
 Requires: gitdb-python = %{version}-%{release}
 Requires: gitdb-python3 = %{version}-%{release}
-Requires: smmap
 BuildRequires : buildreq-distutils3
-BuildRequires : smmap
 
 %description
-GitDB
-=====
-GitDB allows you to access bare git repositories for reading and writing. It aims at allowing full access to loose objects as well as packs with performance and scalability in mind. It operates exclusively on streams, allowing to handle large objects with a small memory footprint.
+GitDB is a pure-Python git object database
 
 %package license
 Summary: license components for the gitdb package.
@@ -43,6 +39,7 @@ python components for the gitdb package.
 Summary: python3 components for the gitdb package.
 Group: Default
 Requires: python3-core
+Provides: pypi(gitdb)
 
 %description python3
 python3 components for the gitdb package.
@@ -57,7 +54,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582589798
+export SOURCE_DATE_EPOCH=1582929937
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
